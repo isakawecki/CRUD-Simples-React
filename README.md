@@ -34,7 +34,7 @@ Feita com **React.js**, utilizando armazenamento local (**localStorage**) para p
 ' bash
 git clone https://github.com/isakawecki/CRUD-Simples-React
 ### 2. Acesse a pasta do projeto:
-cd NOME_DO_REPOSITORIO
+cd CRUD-Simples-React
 ### 3. Instale as dependências:
 npm install
 ### 4. Rode o projeto:
