@@ -22,7 +22,7 @@ Feita com **React.js**, utilizando armazenamento local (**localStorage**) para p
 ## Tecnologias utilizadas
 
 - **React.js**
-- **CSS3** (com estilização personalizada)
+- **CSS** 
 - **LocalStorage** (persistência dos dados no navegador)
 
 ---
