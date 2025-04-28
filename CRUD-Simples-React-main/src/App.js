@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import BubbleBackground from './components/BubbleBackground'; // ✅ Importando o fundo animado
-
+import BubbleBackground from './components/BubbleBackground'; 
 function App() {
   const [lista, setLista] = useState([]);
   const [nome, setNome] = useState('');
@@ -71,7 +70,7 @@ function App() {
 
   return (
     <div className="container">
-      <BubbleBackground /> {/* 🔵 Fundo animado atrás de tudo */}
+      <BubbleBackground /> {}
       <header className="marca-header">
         <h1 className="marca-titulo">Glow Essence</h1>
       </header>

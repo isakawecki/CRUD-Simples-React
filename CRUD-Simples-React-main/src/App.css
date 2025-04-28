@@ -1,10 +1,8 @@
-/* App.css atualizado */
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: #faf5ff; /* Fundo mais claro e suave */
+  background: #faf5ff;
   overflow-x: hidden;
   position: relative;
 }
@@ -20,7 +18,7 @@ body {
 
 .skincare {
   font-size: 3.5rem;
-  color: #8a4fff; /* Roxo mais vibrante */
+  color: #8a4fff;
   margin-bottom: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -28,7 +26,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo dos cards */
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -73,9 +71,9 @@ body {
   box-shadow: 0 6px 16px rgba(138, 79, 255, 0.25);
 }
 .card-img-container {
-  width: 120px; /* Reduzi um pouco */
+  width: 120px; 
   height: 120px;
-  margin-bottom: 0.8rem; /* Espaço menor abaixo da imagem */
+  margin-bottom: 0.8rem; 
 }
 .image-placeholder {
   width: 80px;
@@ -100,7 +98,7 @@ body {
   font-size: 1.2rem;
   color: #5a2d9c;
   margin-bottom: 0.5rem;
-  font-weight: 700; /* Negrito */
+  font-weight: 700; 
 }
 
 .card-info p {
@@ -203,7 +201,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Estilo dos inputs */
+
 .modalConteudo input {
   width: 100%;
   padding: 12px 15px;
@@ -212,7 +210,7 @@ body {
   font-size: 0.95rem;
   transition: all 0.3s ease;
   background: #faf5ff;
-  box-sizing: border-box; /* Garante que padding não altere a largura */
+  box-sizing: border-box; 
 }
 
 .modalConteudo input::placeholder {
@@ -227,7 +225,7 @@ body {
   background: white;
 }
 
-/* Container dos botões */
+
 .modalBtns {
   display: flex;
   gap: 1rem;
@@ -235,7 +233,7 @@ body {
   justify-content: center;
 }
 
-/* Botão Adicionar/Atualizar */
+
 .modalBtns .enviarBtn {
   margin: 0;
   padding: 12px 0;
@@ -251,7 +249,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Botão Cancelar - ESTILO ATUALIZADO */
+
 .modalBtns .cancelarBtn {
   margin: 0;
   padding: 12px 0;
@@ -270,7 +268,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Efeitos ativos para ambos botões */
+
 .modalBtns button:active {
   transform: translateY(0);
 }
@@ -281,10 +279,10 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  z-index: 1000; /* Garante que fique acima de tudo */
-  overflow-y: auto; /* Permite scroll se necessário */
+  align-items: center; 
+  justify-content: center; 
+  z-index: 1000;
+  overflow-y: auto; 
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
 }
@@ -300,13 +298,11 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* CABEÇALHO DA MARCA - Versão refinada */
 .marca-header {
   padding: 1rem 0 0;
   position: relative;
   z-index: 2;
-  text-align: left; /* Alinha à esquerda */
+  text-align: left; 
 }
 
 .marca-container {
@@ -316,19 +312,18 @@ body {
 }
 
 .marca-titulo {
-  font-size: 1.5rem; /* Tamanho reduzido */
+  font-size: 1.5rem; 
   color: #5a2d9c;
   margin: 0;
   font-weight: 300;
-  letter-spacing: 4px; /* Espaçamento reduzido */
+  letter-spacing: 4px; 
   text-transform: uppercase;
   display: inline-block;
   font-family: 'Playfair Display', serif;
   position: relative;
-  padding-left: 1.5rem; /* Espaço para o detalhe */
+  padding-left: 1.5rem; 
 }
 
-/* Linha decorativa fina à esquerda */
 .marca-titulo::before {
   content: '';
   position: absolute;
@@ -341,7 +336,7 @@ body {
   border-radius: 3px;
 }
 
-/* Ajuste para telas pequenas */
+
 @media (max-width: 600px) {
   .marca-titulo {
     font-size: 1.8rem;
