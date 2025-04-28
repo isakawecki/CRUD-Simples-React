@@ -1,0 +1,370 @@
+/* App.css atualizado */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #faf5ff; /* Fundo mais claro e suave */
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.skincare {
+  font-size: 3.5rem;
+  color: #8a4fff; /* Roxo mais vibrante */
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(138, 79, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(138, 79, 255, 0.2);
+}
+
+.card-img {
+  width: 140px; 
+  height: 140px; 
+  object-fit: cover; 
+  margin-bottom: 1rem;
+  border-radius: 20px; 
+  box-shadow: 0 4px 12px rgba(138, 79, 255, 0.15); 
+  border: 3px solid white; 
+  background: linear-gradient(135deg, #faf5ff, #e0d0ff); 
+  padding: 8px; 
+  transition: all 0.3s ease; 
+}
+.card-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(138, 79, 255, 0.25);
+}
+.card-img-container {
+  width: 120px; /* Reduzi um pouco */
+  height: 120px;
+  margin-bottom: 0.8rem; /* Espaço menor abaixo da imagem */
+}
+.image-placeholder {
+  width: 80px;
+  height: 80px;
+  background: #f0e9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  color: #8a4fff;
+  font-size: 0.9rem;
+}
+
+.card-info {
+  width: 100%;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.card-info h3 {
+  font-size: 1.2rem;
+  color: #5a2d9c;
+  margin-bottom: 0.5rem;
+  font-weight: 700; /* Negrito */
+}
+
+.card-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.card-info p strong {
+  font-weight: 600;
+  color: #8a4fff;
+}
+.card-info p::before {
+  content: '•';
+  color: #8a4fff;
+  margin-right: 6px;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-top: auto;
+}
+.enviarBtn {
+  margin-top: 30px;
+  background: #8a4fff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(138, 79, 255, 0.3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.enviarBtn:hover {
+  background: #7b3aff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(138, 79, 255, 0.4);
+}
+
+.editarBtn, .deletarBtn {
+  background: #8a4fff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 100px;
+  font-weight: 500;
+}
+
+.editarBtn:hover, .deletarBtn:hover {
+  background: #7b3aff;
+  transform: translateY(-2px);
+}
+.modal {
+  background: rgba(0,0,0,0.5);
+}
+
+.modalConteudo {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(138, 79, 255, 0.2);
+}
+
+.modalConteudo h3 {
+  color: #8a4fff;
+}
+.modalConteudo {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(138, 79, 255, 0.2);
+  animation: slideUp 0.4s ease;
+}
+
+.modalConteudo h3 {
+  color: #8a4fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.modalInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilo dos inputs */
+.modalConteudo input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0d0ff;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: #faf5ff;
+  box-sizing: border-box; /* Garante que padding não altere a largura */
+}
+
+.modalConteudo input::placeholder {
+  color: #b39ddb;
+  opacity: 0.8;
+}
+
+.modalConteudo input:focus {
+  outline: none;
+  border-color: #8a4fff;
+  box-shadow: 0 0 0 3px rgba(138, 79, 255, 0.2);
+  background: white;
+}
+
+/* Container dos botões */
+.modalBtns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+/* Botão Adicionar/Atualizar */
+.modalBtns .enviarBtn {
+  margin: 0;
+  padding: 12px 0;
+  flex: 1;
+  background: #8a4fff;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.modalBtns .enviarBtn:hover {
+  background: #7b3aff;
+  transform: translateY(-2px);
+}
+
+/* Botão Cancelar - ESTILO ATUALIZADO */
+.modalBtns .cancelarBtn {
+  margin: 0;
+  padding: 12px 0;
+  flex: 1;
+  background: white;
+  color: #8a4fff;
+  font-weight: 500;
+  border: 2px solid #e0d0ff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.modalBtns .cancelarBtn:hover {
+  background: #faf5ff;
+  border-color: #8a4fff;
+  transform: translateY(-2px);
+}
+
+/* Efeitos ativos para ambos botões */
+.modalBtns button:active {
+  transform: translateY(0);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  z-index: 1000; /* Garante que fique acima de tudo */
+  overflow-y: auto; /* Permite scroll se necessário */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.modalConteudo {
+  position: relative;
+  margin: 20px;
+  max-height: 90vh; 
+  overflow-y: auto; 
+}
+.marca-header {
+  text-align: center;
+  padding: 1.5rem 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* CABEÇALHO DA MARCA - Versão refinada */
+.marca-header {
+  padding: 1rem 0 0;
+  position: relative;
+  z-index: 2;
+  text-align: left; /* Alinha à esquerda */
+}
+
+.marca-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.marca-titulo {
+  font-size: 1.5rem; /* Tamanho reduzido */
+  color: #5a2d9c;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 4px; /* Espaçamento reduzido */
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  padding-left: 1.5rem; /* Espaço para o detalhe */
+}
+
+/* Linha decorativa fina à esquerda */
+.marca-titulo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: linear-gradient(to bottom, #8a4fff, #e0d0ff);
+  border-radius: 3px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+  .marca-titulo {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    padding-left: 1rem;
+  }
+  
+  .marca-container {
+    padding: 0 1rem;
+  }
+}
+.card-info p {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.card-info p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #8a4fff;
+  border-radius: 50%;
+}

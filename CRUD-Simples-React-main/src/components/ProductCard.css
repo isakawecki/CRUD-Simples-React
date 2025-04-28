@@ -1,0 +1,57 @@
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 200px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #5e4b8b;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #9c8ac6;
+  }
+  
+  .button-group {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .edit-btn, .delete-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .edit-btn {
+    background-color: #ffc1d3;
+    color: #8b2e5c;
+  }
+  
+  .delete-btn {
+    background-color: #cce3ff;
+    color: #315e9d;
+  }
+  
